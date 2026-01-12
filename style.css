@@ -9,6 +9,7 @@
   --card: #23272f;
   --muted: #b0bec5;
 }
+
 html {
   scroll-behavior: smooth;
   cursor: none !important;
@@ -49,6 +50,20 @@ body {
   transform: translateY(-6px);
 }
 
+/* Mobile compatibility fix */
+@media (max-width: 768px) {
+  html {
+    cursor: auto !important;
+  }
+
+  .custom-cursor {
+    display: none !important;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
 
 
 /* Modal */
